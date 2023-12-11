@@ -11,8 +11,8 @@
 
 #### Sensor - IPC
 - **Sensor.c:** 무작위 온도 (0-30) 및 습도 (0-1) 데이터를 생성합니다.
-- **Sensor.c:** 센서 데이터를 메시지 큐에 전송합니다.
-- **Consumer.c:** IPC에 대한 메시지 큐를 활용합니다.
+- **Sensor.c:** 센서 데이터를 메시지 대기열로 보냅니다.
+- **Consumer.c:** IPC에 대한 메시지 대기열을 활용합니다.
 - **Consumer.c:** 메시지 큐에서 데이터를 수신하고 출력합니다.
 
 #### Sensor - DB & MQTT_Publish
