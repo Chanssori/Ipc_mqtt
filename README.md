@@ -1,7 +1,6 @@
 # Ipc_mqtt
 
 프로젝트: 온도 및 습도 조절 시스템
-
 온습도 제어 시스템은 효율적인 데이터 교환을 위해 IPC(Inter-Process Communication), MySQL 데이터베이스, MQTT를 조합하여 센서 데이터를 관리합니다. 
 
 
@@ -9,6 +8,7 @@
 
 작동 방식
 Sensor – IPC - DB & MQTT Publish - MQTT Subscriber
+
 
 Sensor - IPC
 Sensor.c: 임의의 온도(0-30) 및 습도(0-1) 데이터를 생성합니다.
@@ -25,6 +25,7 @@ Database_mysql.py: 데이터를 수신하여 MySQL 데이터베이스에 삽입�
 DB 및 MQTT_PUBLISH – MQTT_
 Database_mysql.py (Mqtt_pub): 데이터를 JSON으로 변환하여 MQTT topic에 publish합니다.
 Mqtt_sub.py: topic을 subscribe하고 on_message 콜백 함수를 정의합니다.
+
 
 
 실행 순서
